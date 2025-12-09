@@ -1,0 +1,22 @@
+{
+  "name": "client",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --clearScreen false",
+    "build": "tsc && vite build && mv dist/* ../../server-build/client_packages/",
+    "preview": "vite preview",
+    "lint": "eslint \"src/**/*.ts\""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@ragempcommunity/types-client": "^2.1.8",
+    "@repo/events-names": "workspace:*",
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "eslint": "^8.57.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.1.4"
+  }
+}
